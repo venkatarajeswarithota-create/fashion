@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StyleSense AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>👗 StyleSense AI</h1>
+
+    <div class="card">
+        <h2>Generate Outfit</h2>
+
+        <input id="gender" placeholder="Gender">
+        <input id="occasion" placeholder="Occasion">
+        <input id="season" placeholder="Season">
+        <input id="colors" placeholder="Preferred Colors">
+        <input id="budget" placeholder="Budget">
+
+        <button onclick="generateOutfit()">Generate</button>
+
+        <pre id="outfitResult"></pre>
+    </div>
+
+    <div class="card">
+        <h2>Chat with Stylist</h2>
+
+        <input id="chatInput" placeholder="Ask fashion question">
+        <button onclick="chat()">Ask</button>
+
+        <pre id="chatResult"></pre>
+    </div>
+
+    <div class="card">
+        <h2>Analyze Outfit Image</h2>
+
+        <input type="file" id="imageInput">
+        <button onclick="analyzeImage()">Analyze</button>
+
+        <pre id="imageResult"></pre>
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
